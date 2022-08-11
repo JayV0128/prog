@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Edit Items - Manager</title>
-    <link rel="stylesheet" href="/CSS/index.css">
-    <link rel="stylesheet" href="/CSS/GenerateReport.css">
-    <link rel="stylesheet" href="/CSS/ViewOrder.css">
-    <link rel="stylesheet" href="/CSS/EditItem.css">
-    <script src="/JavaScript/EditItem.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="GenerateReport.css">
+    <link rel="stylesheet" href="ViewOrder.css">
+    <link rel="stylesheet" href="EditItem.css">
+    <script src="EditItem.js"></script>
 </head>
 
 <body>
