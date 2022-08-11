@@ -21,6 +21,7 @@
         <?php
             session_start();
             $staffName = $_SESSION['staffName'];
+            $sid = $_SESSION['staffID'];
         ?>
         <input type="text" name="welSname" id="welSname" readonly value="Welcome back, <?php echo $staffName; ?>!">
         <a href="menuSalesperson.php"><input type="button" name="menus" id="menus" value="Menu"></a>
@@ -75,7 +76,6 @@
             $rs = mysqli_query($conn, $sql);
             while ($rc = mysqli_fetch_assoc($rs)) {
                 extract($rc);
-//                var_dump($rc);
                 printf('<tr>
                                    <td>%s</td>
                                    <td>%s</td>
@@ -94,28 +94,13 @@
             ?>
         </table>
     </div>
+    <!-- orderID will be generated after the item is created successfully -->
     <div class="createOrder" id="createOrder">
         <form action="create.php" method="post" id="createform">
             <div class="Addorder">
                 <!--generated automatically-->
-                <div class="orderid">
-                    <?php require_once('conn.php');
-                    $sql = "SELECT MAX(orderID)+1 AS 'max' FROM orders";
-                    $rs = mysqli_query($conn, $sql);
-                    while ($rc = mysqli_fetch_assoc($rs)) {
-                        extract($rc);
-//                        var_dump($rc);
-                    }
-                    ?>
-                    Order ID: <input type="text" name="orderID" readonly value="<?php echo $max; ?>">
-                </div>
-                <!--generated automatically-->
-                <div class="timestamp">
-                    Date &amp; Time: <input type="datetime-local" name="time" readonly>
-                </div>
                 <div class="staffid">
-                    <span class="error"></span><br>
-                    Staff ID: <input type="text" name="staffID" id="staffID" placeholder="Enter Staff ID" onchange="checkStaffID();">
+                    Staff ID: <input type="text" name="staffID" id="staffID" value="<?php echo $sid; ?>" readonly>
                 </div>
                 <div class="itemid">
                     <table>
@@ -123,7 +108,6 @@
                         <th>Quantity</th>
                     <?php
                     foreach ($_SESSION['cart'] as $key => $val) {
-                        // var_dump($_SESSION['cart']);
                         printf('<tr>
                                           <td><input type="text" value="%s" name="itemID" id="itemID" readonly></td>
                                           <td><input type="text" value="%s" name="quan" id="quan"></td>
@@ -139,20 +123,18 @@
                     Customer's Email: <input type="text" name="custEmail" id="custEmail" placeholder="e.g. xxx@gmail.com">
                 </div>
                 <div class="address">
-                    Delivery Address: <input type="text" name="deliveryAddress" id="deliveryAddress" placeholder="e.g. x/F, xxx Building, HK">
+                    Delivery Address: <textarea name="deliveryAddress" id="deliveryAddress" cols="50" rows="5" placeholder="Enter delivery address..."></textarea>
                 </div>
                 <div class="deliverydate">Delivery Date: <input type="text" name="deliveryDate" id="deliveryDate" placeholder="Enter in YYYY/MM/DD">
                 </div>
+                <div class="btn" id="btn">
+                    <!--click and call function to check the input fields and submit the form.-->
+                    <button type="button" name="btnCreate" onclick="return checkOrderInfo();return false;">Confirm</button>
+                    <button type="button" name="btnClear" onclick="resetFields();">Clear Fields</button>
+                </div>
             </div>
-
-        <div class="btn" id="btn">
-            <!--click and call function to check the input fields and submit the form.-->
-            <button type="button" name="btnCreate" onclick="return checkOrderInfo();return false;">Confirm</button>
-            <button type="button" name="btnClear" onclick="resetFields();">Clear Fields</button>
-        </div>
         </form>
     </div>
-
 </div>
 </body></html>
 
