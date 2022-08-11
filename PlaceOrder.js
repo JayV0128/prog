@@ -30,19 +30,6 @@ function checkItem() {
     }
 }
 
-function checkStaffID() {
-    var staffID = document.getElementById("staffID");
-    var errorMsg = document.querySelector(".error");
-    var staffIDRegex = /^s[0-9]{4}$/;
-
-    if (staffID.value.match(staffIDRegex) == null) {
-        errorMsg.innerHTML = "Please enter valid staff ID.";
-        errorMsg.style.color = "red";
-    } else {
-        errorMsg.innerHTML = "";
-    }
-}
-
 // check the input fields before the form is submitted
 function checkOrderInfo() {
     var staffID = document.getElementById("staffID");
@@ -86,12 +73,10 @@ function checkOrderInfo() {
 }
 
 function resetFields() {
-    var staffID = document.getElementById("staffID");
     var cEmail = document.getElementById("custEmail");
     var dAddress = document.getElementById("deliveryAddress");
     var dDate = document.getElementById("deliveryDate");
 
-    staffID.value = "";
     cEmail.value = "";
     dAddress.value = "";
     dDate.value = "";
