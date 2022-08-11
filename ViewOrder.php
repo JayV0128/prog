@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>View Order - Salesperson</title>
-    <link rel="stylesheet" href="/CSS/index.css">
-    <link rel="stylesheet" href="/CSS/GenerateReport.css">
-    <link rel="stylesheet" href="/CSS/ViewOrder.css">
-    <link rel="stylesheet" href="/CSS/DeleteCustomer.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="GenerateReport.css">
+    <link rel="stylesheet" href="ViewOrder.css">
+    <link rel="stylesheet" href="DeleteCustomer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="/JavaScript/ViewOrder.js"></script>
+    <script src="ViewOrder.js"></script>
 </head>
 
 <body>
