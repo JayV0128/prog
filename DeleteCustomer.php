@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <title>Delete Customer - Manager</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/CSS/index.css">
-    <link rel="stylesheet" href="/CSS/GenerateReport.css">
-    <link rel="stylesheet" href="/CSS/DeleteCustomer.css">
-    <script src="/JavaScript/DeleteCustomer.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="GenerateReport.css">
+    <link rel="stylesheet" href="DeleteCustomer.css">
+    <script src="DeleteCustomer.js"></script>
 </head>
 
 <body>
