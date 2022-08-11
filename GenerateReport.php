@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Generate Monthly Report - Manager</title>
-    <link rel="stylesheet" href="/CSS/index.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/CSS/GenerateReport.css">
-    <script src="/JavaScript/GenerateReport.js"></script>
+    <link rel="stylesheet" href="GenerateReport.css">
+    <script src="GenerateReport.js"></script>
 </head>
 
 <body>
