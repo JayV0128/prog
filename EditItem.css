@@ -1,0 +1,76 @@
+.container {
+    height: 750px;
+    border-bottom: 5px dotted #bea6f0;
+}
+
+.itemdetails {
+    margin: 20px 50px;
+}
+
+.itemdetails h3 {
+    width: 20%;
+    text-align: center;
+    border: 3px solid pink;
+    border-radius: 5px;
+    background-color: antiquewhite;
+}
+
+/*styling the input div*/
+.itemid,
+.itemname,
+.itemdesc,
+.stockquantity,
+.price {
+    margin: 10px 40px;
+    padding: 0px 50px;
+    color: violet;
+    font-family: serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px white;
+}
+
+/*styling the input fields*/
+.itemid input[type=text],
+.itemname input[type=text],
+.stockquantity input[type=number],
+.price input[type=text] {
+    border: 1px solid #bb9ff4;
+    border-radius: 5px;
+    height: 20px;
+    margin-left: 10px;
+    width: 150px;
+}
+
+.itemdesc textarea {
+    border: 1px solid #bb9ff4;
+    border-radius: 5px;
+}
+
+.itemname input[type=text]{
+    width: 400px
+}
+
+/*styling the form*/
+#editForm {
+    padding: 20px;
+    border: 3px dotted #1bbee5;
+    border-radius: 50px;
+    background-color: azure;
+}
+
+.btn button {
+    font-size: 20px;
+    width: 150px;
+    height: 30px;
+}
+
+.btn button a{
+    text-decoration: none;
+}
+
+.btn {
+    padding: 0px 90px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}

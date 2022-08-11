@@ -1,0 +1,167 @@
+.container {
+    height: 1000px;
+    border-bottom: 5px dotted #bea6f0;
+}
+
+.loginInfo input[type=button] {
+    width: 130px;
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: bold;
+    margin: 10px 5px;
+    border: 2px solid #1bbee5;
+    border-radius: 5px;
+    background-color: white;
+}
+
+/*styling the search div*/
+.viewitem {
+    border-bottom: 3px solid grey;
+    margin: 20px 20px 0px;
+    color: violet;
+    padding: 10px 5px;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px #d4d2d2;
+    font-family: serif;
+}
+
+/*styling the search text bar*/
+.viewitem input[type=text], #itemqty {
+    border: 1px solid #bb9ff4;
+    border-radius: 5px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+#itemqty {
+    width: 50px;
+}
+
+/*styling the search icon*/
+.viewitem button {
+    border: none;
+    background-color: inherit;
+}
+
+.showAvailableItems {
+    height: 250px;
+    margin: 20px;
+}
+
+/*styling the table of available items*/
+.showAvailableItems table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    overflow: scroll;
+    text-align: center;
+}
+
+.showAvailableItems table th {
+    background-color: antiquewhite;
+    color: dimgrey;
+    font-size: 20px;
+}
+
+/*styling the "Add to Order" button*/
+#btnAddtoOrder, #cart {
+    width: 100px;
+    font-size: 15px;
+    font-family: cursive;
+    font-weight: bold;
+    margin: 10px 5px;
+    border: 2px solid #1bbee5;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.createOrder {
+    width: 80%;
+    height: 450px;
+    margin: 15px 150px;
+    display: none;
+    border: 3px solid grey;
+    border-radius: 20px;
+    background-color: azure;
+}
+
+.error{
+    font-size: 15px;
+}
+
+.Addorder,
+.Addcustomer {
+    width: 500px;
+    height: 200px;
+    padding: 20px 30px;
+}
+
+.Addorder {
+    float: left;
+}
+
+.Addcustomer {
+    float: right;
+}
+
+.orderid,
+.timestamp,
+.staffid,
+.itemid,
+.customerEmail,
+.address,
+.deliverydate {
+    margin: 20px 40px;
+    padding: 0px 50px;
+    color: violet;
+    font-family: serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px white;
+}
+
+.createOrder input[type=text] {
+    border: 1px solid #bb9ff4;
+    border-radius: 5px;
+    height: 20px;
+    margin-left: 10px;
+    width: 150px;
+}
+
+.createOrder input[type=datetime-local] {
+    border: 1px solid #bb9ff4;
+    margin-left: 5px;
+    border-radius: 5px;
+    height: 20px;
+}
+
+.btn {
+    float: right;
+    margin-right: 220px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.btn button {
+    width: 100px;
+    height: 30px;
+}
+
+.btn button:hover,
+.viewitem input[type=button], #btnAddtoOrder:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+/*styling the oncreate mode button*/
+#createOrderMode {
+    width: 150px;
+    background-color: pink;
+    float: right;
+    font-size: 15px;
+    font-family: cursive;
+    font-weight: bold;
+    margin: 10px 5px;
+    border: 2px solid #1bbee5;
+    border-radius: 5px;
+}

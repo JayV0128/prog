@@ -1,0 +1,153 @@
+.container {
+    height: 1000px;
+    border-bottom: 5px dotted #bea6f0;
+}
+
+.itemdetails {
+    margin: 20px;
+}
+
+/*styling the search div*/
+.viewitem {
+    border-bottom: 3px solid grey;
+    border-bottom: 3px solid grey;
+    margin: 20px 20px 0px;
+    color: violet;
+    padding: 10px 5px;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px #d4d2d2;
+    font-family: serif;
+}
+
+.itemlist {
+    margin: 20px;
+}
+
+/*styling the Insert Item Mode button*/
+#insertItemMode {
+    width: 150px;
+    background-color: pink;
+    font-size: 15px;
+    font-family: cursive;
+    font-weight: bold;
+    margin: 10px 5px;
+    border: 2px solid #1bbee5;
+    border-radius: 5px;
+    float: right;
+}
+
+#insertItemMode:hover, .itemlist table td button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+/*styling the Edit Item and Delete Item buttons*/
+.itemlist table td button {
+    background-color: azure;
+    font-size: 15px;
+    font-family: cursive;
+    font-weight: bold;
+    margin: 10px 5px;
+    border: 2px solid #1bbee5;
+    border-radius: 5px;
+    width: 100px;
+}
+
+.itemlist table td a{
+    text-decoration: none;
+    color: black;
+}
+
+.itemlist table {
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.itemlist table th {
+    background-color: antiquewhite;
+    color: dimgrey;
+    font-size: 20px;
+}
+
+.itemlist table td {
+    height: 40px;
+}
+
+.itemlist table tr .itemID {
+    width: 15%;
+}
+
+.itemlist table tr .itemName {
+    width: 40%;
+}
+
+.itemlist table tr .stock {
+    width: 20%;
+}
+
+.itemlist table tr .itemPrice {
+    width: 15%;
+}
+
+.leftside, .rightside {
+    width: 500px;
+    height: 150px;
+    padding: 20px 30px;
+}
+
+.leftside {
+    float: left;
+}
+
+.rightside {
+    float: right;
+}
+
+.itemid, .itemname, .itemdesc, .stockquantity, .price {
+    margin: 10px 40px;
+    padding: 0px 50px;
+    color: violet;
+    font-family: serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px white;
+}
+
+.itemid input[type=text], .itemname input[type=text], .stockquantity input[type=number], .price input[type=text] {
+    border: 1px solid #bb9ff4;
+    border-radius: 5px;
+    height: 20px;
+    margin-left: 10px;
+    width: 150px;
+}
+
+.itemdesc textarea {
+    border: 1px solid #bb9ff4;
+    border-radius: 5px;
+}
+
+.insertItem {
+    width: 80%;
+    height: 250px;
+    margin: 15px 140px;
+    display: none;
+    border: 3px solid grey;
+    border-radius: 20px;
+    background-color: azure;
+}
+
+.btn button {
+    float: right;
+    width: 100px;
+    height: 30px;
+}
+
+.btn {
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    display: none;
+}

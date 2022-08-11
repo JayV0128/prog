@@ -1,0 +1,90 @@
+.loginInfo input[type=button] {
+    width: 100px;
+}
+
+.loginInfo input[type=text] {
+    width: 30%;
+}
+
+/*styling the search div*/
+.vieworder {
+    margin: 20px 20px 0px;
+    color: violet;
+    padding: 10px 5px;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px #d4d2d2;
+    font-family: serif;
+}
+
+/*styling the search text bar*/
+.vieworder input[type=text] {
+    border: 1px solid #bb9ff4;
+    border-radius: 5px;
+    height: 20px;
+    margin-left: 10px;
+    width: 300px;
+}
+
+.vieworder button {
+    border: none;
+    background-color: inherit;
+}
+
+/*styling the oncreate mode button*/
+#deleteOrderMode {
+    width: 150px;
+    background-color: pink;
+    float: right;
+    font-size: 15px;
+    font-family: cursive;
+    font-weight: bold;
+    margin: 10px 5px;
+    border: 2px solid #1bbee5;
+    border-radius: 5px;
+}
+
+.orderlist {
+    border-top: 3px solid #cbc8c8;
+    border-bottom: 3px solid #cbc8c8;
+    height: 550px;
+}
+
+/*styling the table*/
+.orderlist table {
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    text-align: center;
+}
+
+.orderlist table th {
+    background-color: antiquewhite;
+    color: dimgrey;
+    font-size: 20px;
+}
+
+/*styling the buttons "View" & "Delete"*/
+.orderlist table td button {
+    font-family: monospace;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 2px solid #1bbee5;
+    background-color: azure;
+    width: 70px;
+}
+
+/*Remove the hyperlink text-decoration*/
+.orderlist table td a {
+    text-decoration: none;
+}
+
+.orderlist table td button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#btnDelete {
+    display: none;
+}

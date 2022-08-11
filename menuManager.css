@@ -1,0 +1,62 @@
+.container {
+    height: 750px;
+    border-bottom: 5px dotted #bea6f0;
+}
+
+.loginInfo input[type=text] {
+    background-color: inherit;
+    border: none;
+    font-size: 25px;
+    color: #1bbee5;
+    float: left;
+    margin: 10px 20px;
+    width: 500px;
+}
+
+.time {
+    text-align: end;
+    margin: 10px 20px;
+}
+
+.notice {
+    margin: auto;
+    height: 190px;
+    width: 80%;
+    border: 3px solid pink;
+    text-align: center;
+    border-radius: 30px;
+    background-color: antiquewhite;
+}
+
+.functions {
+    height: 300px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    text-shadow: 1px 1px 0px grey;
+}
+
+.editItem, .insertItem, .deleteCustomer, .generateReport {
+    margin: 50px 45px;
+    background-color: deeppink;
+}
+
+.functions img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50px;
+}
+
+.editItem a, .insertItem a, .deleteCustomer a, .generateReport a {
+    text-decoration: none;
+    color: #1bbee5
+}
+
+.editItem:hover, .insertItem:hover, .deleteCustomer:hover, .generateReport:hover {
+    transform: scale(1.05);
+    transition: 2s;
+}

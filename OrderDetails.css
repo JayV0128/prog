@@ -1,0 +1,126 @@
+.container {
+    height: 1000px;
+}
+
+.orderdetails {
+    height: 350px;
+    margin: 0px 50px;
+    padding: 0px 30px;
+    display: inline-block;
+    border-bottom: 3px dotted grey;
+}
+
+/*styling all the four fields*/
+.orderInfo,
+.deliveryInfo,
+.custInfo,
+.staffInfo {
+    width: 600px;
+    height: 150px;
+}
+
+/*styling the orderInfo and deliveryInfo fields*/
+.orderInfo,
+.deliveryInfo {
+    float: left;
+}
+
+/*styling the customerInfo and staffInfo fields*/
+.custInfo,
+.staffInfo {
+    float: right;
+}
+
+.deliveryInfo, .staffInfo {
+    margin-top: 40px;
+}
+
+/*styling all input fields*/
+.orderid,
+.timestamp,
+.customerName,
+.customerEmail,
+.customerPhone,
+.staffid,
+.staffname,
+.deliveryaddress,
+.deliverydate, .totalQtyPrice {
+    margin: 20px 0px;
+    padding: 0px 50px;
+    color: violet;
+    font-family: serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px white;
+}
+.deliveryaddress{
+    width: 600px;
+}
+
+.orderdetails input, .itemsordered input {
+    border: 1px solid #bb9ff4;
+    border-radius: 5px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.info h4{
+    border: 3px solid pink;
+    text-align: center;
+    border-radius: 10px;
+    background-color: antiquewhite;
+}
+
+.itemsordered {
+    margin: 0px 50px;
+    height: 400px;
+    border-bottom: 3px dotted grey;
+}
+
+.itemheader {
+    margin: 10px;
+    border: 3px solid #1bbee5;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.itemsordered table th {
+    background-color: antiquewhite;
+    color: dimgrey;
+    font-size: 20px;
+}
+
+.itemsordered table, .itemheader, .btn, .totalQtyPrice {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    text-align: center;
+}
+
+.itemsordered table td {
+    height: 40px;
+}
+
+/*styling the total areas*/
+.totalQtyPrice {
+    height: 50px;
+    padding: 30px;
+    float: right;
+}
+
+.btn input[type=button] {
+    float: right;
+    width: 120px;
+    font-size: 15px;
+    font-family: cursive;
+    font-weight: bold;
+    margin: 10px 5px;
+    border: 2px solid #1bbee5;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.btn input[type=button]:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}

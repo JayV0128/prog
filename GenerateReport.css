@@ -1,0 +1,97 @@
+/*styling the login info box*/
+.loginInfo {
+    text-align: right;
+    margin: 20px 20px 0px;
+    border-radius: 10px;
+    background-color: floralwhite;
+    border-bottom: 3px solid grey;
+}
+
+/*styling Welcome message*/
+.loginInfo input[type=text] {
+    background-color: inherit;
+    border: none;
+    font-size: 25px;
+    color: #1bbee5;
+    float: left;
+    margin: 10px 20px;
+    width: 400px;
+}
+
+/*styling login info buttons*/
+.loginInfo input[type=button] {
+    width: 150px;
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: bold;
+    margin: 10px 5px;
+    border: 2px solid #1bbee5;
+    border-radius: 5px;
+    background-color: white;
+}
+
+/*styling the search div*/
+.viewstaff {
+    margin: 20px 20px 0px;
+    color: violet;
+    padding: 10px 5px;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px #d4d2d2;
+    font-family: serif;
+}
+
+/*styling the search text bar*/
+.viewstaff input[type=text] {
+    border: 1px solid #bb9ff4;
+    border-radius: 5px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+/*styling the search icon*/
+.viewstaff button {
+    border: none;
+    background-color: inherit;
+}
+
+.reportlist {
+    border-top: 3px solid #cbc8c8;
+    border-bottom: 3px solid #cbc8c8;
+    height: 550px;
+}
+
+/*styling the table*/
+.reportlist table {
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    text-align: center;
+}
+
+.reportlist table td {
+    height: 40px;
+}
+
+.reportlist table th {
+    background-color: antiquewhite;
+    color: dimgrey;
+    font-size: 20px;
+}
+
+.reportlist table tr .id {
+    width: 15%;
+}
+
+.reportlist table tr .name {
+    width: 40%;
+}
+
+.reportlist table tr .numOfOrders {
+    width: 20%;
+}
+
+.loginInfo input[type=button]:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
