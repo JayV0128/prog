@@ -59,6 +59,7 @@ if (!empty($_POST)) {
             session_start();
             $_SESSION['staffName'] = array();
             $_SESSION['staffName'] = $staffName;
+            $_SESSION['staffID'] = $sid;
             if ($position == "Staff") {
                 header("location:menuSalesperson.php");
             }
