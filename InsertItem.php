@@ -39,7 +39,7 @@
             </button>
             <!--check item ID format and alert error message when it is invalid-->
             <span class="showError"></span>
-            Enter to check quantity:
+            Check Item(s) equal or below quantity:
             <input type="text" name="checkQty" min="0" placeholder="Enter number as quantity" pattern="^[0-9]+$">
             <input type="button" name="insertItemMode" id="insertItemMode" value="Insert Item: Off" onclick="insertMode();return false;">
             <button id="btnSearch">
@@ -92,18 +92,11 @@
             ?>
         </table>
     </div>
+    <!-- itemID will be generated after the item is created successfully -->
     <div class="insertItem" id="insertItem">
         <form action="AddItem.php" method="post" id="insertForm">
             <div class="leftside">
                 <!--generated automatically-->
-                <?php
-                $sql = "SELECT MAX(itemID) + 1 AS 'max' FROM Item";
-                $rs = mysqli_query($conn, $sql);
-                while ($rc = mysqli_fetch_assoc($rs)) {
-                    extract($rc);
-                }
-                ?>
-                <div class="itemid">Item ID: <input type="text" name="itemID" id="itemID" readonly value="<?php echo $max ?>"></div>
                 <div class="itemname">Item Name: <input type="text" name="itemName" id="itemName" value=""></div>
                 <!--set the limited of words to 50 by php-->
                 <div class="itemdesc">
